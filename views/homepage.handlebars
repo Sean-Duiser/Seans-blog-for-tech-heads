@@ -1,3 +1,14 @@
 {{#each posts as |blogpost|}}
-{{> blogPost-details}}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <p>
+      Posted by {{blogpost.user.name}} on {{format_date blogpost.date_created}}
+    </p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{> blogPost-details}}
+    </p>
+  </div>
+</div>
 {{/each}}

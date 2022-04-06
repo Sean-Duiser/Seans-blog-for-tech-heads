@@ -3,9 +3,8 @@ module.exports = {
     return date.toLocaleTimeString();
   },
   format_date: (date) => {
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-    const year = date.getFullYear() + 5;
-    return `${month}/${day}/${year}`;
-  },
+    const currentYear = date.getFullYear();
+    date.setFullYear(currentYear);
+    return date.toLocaleDateString();
+  }
 };
