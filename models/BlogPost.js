@@ -25,10 +25,10 @@ BlogPost.init(
     },
     user_id: {
       type: DataTypes.INTEGER,
-      // references: {
-      //   model: 'user',
-      //   key: 'id',
-      // },
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     }
   },
   {
