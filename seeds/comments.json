@@ -1,0 +1,17 @@
+[
+  {
+    "description": "Wow so cool",
+    "user_id": 1,
+    "blogpost_id": 1
+  },
+  {
+    "description": "I am super confused",
+    "user_id": 2,
+    "blogpost_id": 2
+  },
+  {
+    "description": "lolololol",
+    "user_id": 3,
+    "blogpost_id": 3
+  }
+]
