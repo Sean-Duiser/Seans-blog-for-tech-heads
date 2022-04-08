@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
           model: Comment,
           include: {
             model: User,
-            attributes: ['name']
+            attributes: ['name'],
           }
         },
       ],
@@ -48,9 +48,12 @@ router.get('/blogposts/:id', async (req, res) => {
             model: User,
             attributes: ['name']
           }
-        },
+        }
+
       ],
     });
+
+
     const blogpost = dbBlogPostData.get({ plain: true });
 
     res.render('blogposts', {

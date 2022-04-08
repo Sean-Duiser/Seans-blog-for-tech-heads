@@ -17,14 +17,15 @@ const seedDatabase = async () => {
     await BlogPost.create({
       ...entry,
     });
+    
   };
-
   for (const entry of commentData) {
     await Comment.create({
       ...entry,
     });
+    
   }
-  
+
   process.exit(0);
 };
 

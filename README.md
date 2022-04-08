@@ -1,3 +1,1 @@
-# Seans-blog-for-tech-heads
-
-## Description
+# Seans-Blog-For-Tech-Heads

@@ -8,6 +8,7 @@
       <div>
         <textarea name="comment-body"></textarea>
       </div>
+
       <div>
         <button type="submit" id="submit">Submit</button>
       </div>
@@ -15,16 +16,16 @@
   </article>
 </div>
 <div class="comment-list">
-{{#each blogpost.comments as |comment|}}
-  <p>
-    {{comment.description}}
-  </p>
-  <div class="col-md-4">
-    <button class="btn btn-sm btn-danger" data-id="{{comment.id}}">DELETE</button>
-  </div>
+{{#each blogpost.comments as |comment| }}
+<p>
+  {{comment.description}}
+</p>
+<div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{comment.id}}">DELETE</button>
+      </div>
 {{/each}}
 </div>
 <script>
-  const postId = {{blogpost.id}};
+ const postId ={{blogpost.id}};
 </script>
 <script src="/js/comment.js"></script>
