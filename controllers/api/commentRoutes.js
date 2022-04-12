@@ -43,6 +43,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 router.put('/:id', withAuth, async (req, res) => {
   console.log(req.body)
   try {

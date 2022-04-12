@@ -22,6 +22,7 @@ async function commentFormHandler(event) {
     }
   }
 }
+
 const handleComment = async (event) => {
   if (event.target.matches('#delete')) {
     const id = event.target.getAttribute('data-id');
